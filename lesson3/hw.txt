@@ -60,10 +60,10 @@ echo replace($str);
 echo "<ul>";
   
 foreach($arr as $key => $val){
-    echo $content = "<li> $key </li>";
+    echo $content = "<li><a href=\"\">$key</a></li>";
     echo "<ul>";
     foreach($val as $elem){
-        echo $content = "<li> $elem </li>";
+        echo $content = "<li><a href=\"\">$elem</a></li>";
     }
     echo "</ul>";
 }
