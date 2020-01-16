@@ -1,0 +1,104 @@
+task 3
+1.
+<?php
+    $i = 0;
+    while ($i <= 100) {
+        if ($i % 3 == 0) echo $i.'<br>';
+        $i++;
+    }
+?>
+
+2.
+$i = 0;
+    do {
+        if($i == 0) echo "$i - ноль<br>";
+        elseif ($i % 2 == 0) echo "$i - четное число<br>";
+        else echo  "$i - нечетное число<br>";
+        
+        $i++;
+    }
+    while ($i <= 10);
+?>
+
+3.
+$arr = [
+	'Московская область' => ['Москва', 'Зеленоград', 'Клин'],
+	'Ленинградская область' => ['Санкт-Петербург', 'Всеволожск', 'Павловск', 'Кронштадт'],
+	'Рязанская область' => ['Касимов', 'Рязань', 'Сасово']
+	];
+	
+	foreach($arr as $key => $value){
+		echo "$key: \n";
+		foreach($value as $key1 => $value1){
+			echo "$value1 ";
+		}
+		echo "\n";
+	}
+
+4.
+function ruToEn($str)
+{    
+    $arr=['а'=>'a','б'=>'b','в'=>'v','г'=>'g','д'=>'d','е'=>'e','ё'=>'e','ж'=>'j','з'=>'z','и'=>'i','й'=>'y','к'=>'k','л'=>'l','м'=>'m','н'=>'n','о'=>'o','п'=>'p','р'=>'r','с'=>'s','т'=>'t','у'=>'u','ф'=>'f','х'=>'h','ц'=>'c','ч'=>'ch','ш'=>'sh','щ'=>'shch','ы'=>'y','э'=>'e','ю'=>'yu','я'=>'ya','ъ'=>'','ь'=>''];
+    return $strEn = strtr($str, $arr);
+}
+echo ruToEn('привет мир!');
+
+5.
+  function replace($str)
+{    
+    return str_replace(' ', '_', $str);
+}
+$str = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae quis expedita necessitatibus atque cum laudantium iste consectetur nam asperiores, tempora, voluptas veniam illum pariatur, tempore ipsam totam eveniet. Cum, fugit!';
+echo replace($str);
+
+
+6.
+ $arr = [
+     'Main' => ['About', 'Staff', 'Contacts'],
+     'Services' => ['Service1', 'Service2', 'Service3']
+     ];
+echo "<ul>";
+  
+foreach($arr as $key => $val){
+    echo $content = "<li> $key </li>";
+    echo "<ul>";
+    foreach($val as $elem){
+        echo $content = "<li> $elem </li>";
+    }
+    echo "</ul>";
+}
+echo "</ul>";
+
+7.
+for($i = 0; $i <10; print($i++)){}
+
+8.
+ $arr = [
+    'Московская область' => ['Москва', 'Зеленоград', 'Клин'],
+    'Ленинградская область' => ['Санкт-Петербург', 'Всеволожск', 'Павловск', 'Кронштадт'],
+    'Рязанская область' => ['Касимов', 'Рязань', 'Сасово']
+    ];
+
+foreach($arr as $key => $value){
+   
+    foreach($value as $elem){
+        if(mb_substr($elem, 0, 1) == 'К'){echo $elem . '<br>';}
+   }
+}
+
+9.
+function ruToEn($str)
+{    
+    $arr=['а'=>'a','б'=>'b','в'=>'v','г'=>'g','д'=>'d','е'=>'e','ё'=>'e','ж'=>'j','з'=>'z','и'=>'i','й'=>'y','к'=>'k','л'=>'l','м'=>'m','н'=>'n','о'=>'o','п'=>'p','р'=>'r','с'=>'s','т'=>'t','у'=>'u','ф'=>'f','х'=>'h','ц'=>'c','ч'=>'ch','ш'=>'sh','щ'=>'shch','ы'=>'y','э'=>'e','ю'=>'yu','я'=>'ya','ъ'=>'','ь'=>''];
+    return $strEn = strtr($str, $arr);
+}
+
+  
+function replace($str)
+{    
+    return str_replace(' ', '_', ruToEn($str));
+}
+
+$str = 'привет мир!';
+
+echo replace($str);
