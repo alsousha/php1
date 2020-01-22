@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+    padding: 5px;
+}
+header, footer {
+    background-color: antiquewhite;
+    height: 150px;   
+}
+.content {
+    margin: 0 auto;
+    width: 1024px;
+    height: 100%
+}
+
+.gallery {
+    height: 100px;
+    width: 150px;
+    
+}
+.textContent {
+    color: brown;
+}
+.img_elem {
+    float: left;
+    margin-right: 5px;
+}
+.clearfix {
+    clear: both;
+}
+
+.warning {
+    color: red;
+}
+
+.successful {
+    color: green;
+}
