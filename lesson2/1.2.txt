@@ -1,0 +1,148 @@
+1.
+	$a = -5;
+        $b = -10;
+        if($a >= 0 && $b >= 0) 
+            echo $a - $b;
+        elseif($a < 0 && $b < 0)
+            echo $a * $b;
+        else echo $a + $b;
+2.
+<?php
+        $a = rand(0, 15);
+        echo "случайное число: $a <br>";
+        switch ($a) {
+            case 0:
+                echo '0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15';
+                break;
+            case 1:
+                echo '1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15';
+                break;
+            case 2:
+                echo '2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15';
+                break;
+            case 3:
+                echo '3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15';
+                break;
+            case 4:
+                echo '4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15';
+                break;
+            case 5:
+                echo '5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15';
+                break;
+            case 6:
+                echo '6, 7, 8, 9, 10, 11, 12, 13, 14, 15';
+                break;
+            case 7:
+                echo '7, 8, 9, 10, 11, 12, 13, 14, 15';
+                break;
+            case 8:
+                echo '8, 9, 10, 11, 12, 13, 14, 15';
+                break;
+            case 9:
+                echo '9, 10, 11, 12, 13, 14, 15';
+                break;
+            case 10:
+                echo '10, 11, 12, 13, 14, 15';
+                break;
+            case 11:
+                echo '11, 12, 13, 14, 15';
+                break;
+            case 12:
+                echo '12, 13, 14, 15';
+                break;
+            case 13:
+                echo '13, 14, 15';
+                break;
+            case 14:
+                echo '14, 15';
+                break;
+            case 15:
+                echo '15';
+                break;
+            default: 
+                echo '$a не в заданном диапазоне'; 
+        }
+	
+    ?> 
+
+3. 
+<?php
+        function sum($a, $b)
+        {
+            return $a + $b;
+        }
+        
+        function diff($a, $b)
+        {
+            return $a - $b;
+        }
+        
+        function div($a, $b)
+        {
+            return $a / $b;
+        }
+    
+        function multi($a, $b)
+        {
+            return $a * $b;
+        }
+    
+        echo "Сложение: ".sum(13, 10);
+        echo "<br> Вычитание: ".diff(13, 10);
+        echo "<br> Деление: ".round(div(13, 10), 2);
+        echo "<br> Умножение: ".multi(13, 10);
+	
+    ?> 
+
+4.
+<?php
+        function sum($a, $b)
+        {
+            return $a + $b;
+        }
+        
+        function diff($a, $b)
+        {
+            return $a - $b;
+        }
+        
+        function div($a, $b)
+        {
+            return $a / $b;
+        }
+    
+        function multi($a, $b)
+        {
+            return $a * $b;
+        }
+    
+        $a = 35;
+        $b = 12;
+        $operation = '*';
+    
+        switch ($operation):
+            case '+':
+                echo sum($a, $b);
+                break;
+            case '-':
+                echo diff($a, $b);
+                break;
+            case '/':
+                echo round(div($a, $b), 2);
+                break;
+            case '*':
+                echo multi($a, $b);
+                break;
+            default:
+                echo 'Error!';
+	   endswitch;
+    ?> 
+
+6.
+function getPow($val, $exp)
+    {
+        if($exp == 0) return 1;
+        return $val * getPow($val, $exp-1);
+        
+    };
+    echo getPow(2, 10);

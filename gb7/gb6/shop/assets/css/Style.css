@@ -1,0 +1,317 @@
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+h3, h2 {
+    color: darkred;
+}
+a {
+    color: darkred;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+    color: crimson;
+}
+
+a.active {
+    color: red;
+}
+body {
+    background-color: #f8f8f8;
+    margin: 0;
+}
+.main {
+    min-height: 800px;
+    height: 100%;
+    margin-bottom: 35px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.container {
+    width: 880px;
+    margin: 0 auto;
+}
+
+.margin-20 {
+	margin-top: 20px;
+}
+
+header, .footer {
+    background-color: #eee8d5;
+    height: 100px;
+    padding: 5px 10px;    
+}
+header {
+    background-image: url(../img/header.jpg);
+}
+footer {
+    bottom: 0;
+}
+
+input[type="button"] {
+    background-color: darkred;
+    color: antiquewhite;
+    padding: 10px 20px;
+    font-size: 1em;
+    font-weight: 700;
+    border-radius: 7px;
+}
+
+input[type="button"]:hover {
+    background-color: antiquewhite;
+    color: darkred;
+}
+
+input[type="button"]:active {
+    border: 1px solid darkred;
+}
+
+.line-through {
+    text-decoration: line-through;
+    color: darkred;
+    font-size: 1.2em;
+    font-family: 'PT Sans', serif;
+}
+
+.price {
+    color: darkred;
+    font-size: 1.5em;
+    font-weight: 700;
+    padding-left: 5px;
+}
+
+/*header-menu*/
+.logo img{
+    height: 55px; 
+    float: left;
+    margin-top: 20px;
+}
+.brand {
+    color: darkred;
+    font-size: 2em;
+    float: left;
+    margin-left: 10px;
+    margin-top: 40px;
+}
+.brand a:hover {
+    color: darkred;
+}
+.navWrap>a {
+    /*font-size: 1.1em;*/
+    font-size: 1.2em;
+    font-weight: 700;
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+.navWrap {
+    float: right;
+    padding-top: 33px;
+    margin-top: 17px;
+}
+
+.auth {
+    margin-left: 270px;
+    margin-top: 10px;
+}
+
+/*footer*/
+.footer p {
+    color: darkred;
+    font-size: 1.1em;
+    text-align: right;
+    padding-top: 15px;
+}
+/*
+page-book
+*/
+.book-description h3 {
+    font-size: 18px;
+    font-weight: 400;
+    background-color: #eaeaea;
+    padding: 5px;
+}
+
+.book-image {
+    float: left;
+    margin-right: 40px;
+}
+
+.book-image img {
+    height: 300px;
+    width: 200px;
+    border: 10px solid grey;
+    margin-left: 20px;
+}
+
+.table-brief {
+    margin-left: 10px;
+}
+
+.book-description-brief h3 {
+    margin-top: 0;
+}
+.book-description-brief td {
+    color: #707070;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.book-characteristics {
+    clear: both;
+}
+.book-characteristics ul {
+    list-style-image: url(../img/book_120714.png);
+    color: darkred;
+}
+
+.book-description-brief {
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+}
+
+.book-description-brief input[type="button"] {
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+}
+
+.main-description {
+    color: #484343;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+
+.first-letter:first-letter {
+    color: darkred;
+    font-family: 'Amatic SC', cursive;
+    font-size: 46px;
+    
+}
+
+.tab-add-book {
+    margin: 15px auto;
+}
+.title-table {
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: 700;
+}
+
+.tab-add-book td {
+    border: 1px solid grey;
+    padding: 10px;
+    border-spacing: 10px 15px;   
+}
+
+.tab-add-book img, .main-item img {
+    height: 320px;
+    width: 230px;     
+}
+
+.book-info {
+    width: 230px;
+    bottom: 10px;
+}
+
+.author {
+    color: #707070;
+}
+
+.price {
+    font-family: 'PT Sans', serif;
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+.tab-add-book input[type="button"] {
+    margin-left: 100px;
+}
+
+/*
+Cataloge.html
+*/
+.main-wrapper {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+}
+
+.main-item {
+    width: 230px;
+    padding: 15px;
+    position: relative;
+    height: 430px;
+}
+
+.main-item .book-price {
+    position: absolute;
+    bottom: 5px;
+}
+
+.main-item input[type="button"] {
+    margin-left: 25px;
+}
+
+
+/*contact.html*/
+.successful {
+    color: green;
+}
+.warning {
+    color: red;
+}
+input {
+    outline: none;
+}
+.input-info {
+    margin-bottom: 15px;
+    padding: 3px;
+    border-radius: 3px;
+}
+.email:focus {
+    color: darkred;
+    background-color: #eee8d5;
+    border-color: antiquewhite;
+}
+textarea:focus {
+    text-transform: capitalize;
+}
+
+#input-name {
+    margin-left: 40px;
+}
+
+/* review.php*/
+.userName {
+    color: darkred;
+}
+/* admin*/
+.descr_book {
+    width: 800px;
+    height: 300px;
+    border-radius: 5px;
+}
+.main-item-admin {
+    float: left;
+    width: 250px;
+    border: 1px solid #af8f8f;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.img_book {
+    display: block;
+    margin: 0 auto;
+}
+
+.edit, .del {
+    margin-right: 100px;
+    font-weight: 700;
+}
