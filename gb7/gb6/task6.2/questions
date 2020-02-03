@@ -1,0 +1,4 @@
+1.
+<input name="userfile" type="file" accept="image/*"/>
+
+Почему все равно принимает файлы др форматов?
